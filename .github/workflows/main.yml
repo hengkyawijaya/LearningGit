@@ -13,7 +13,7 @@ jobs:
           GITHUB_CLIENT_SECRET: ${{ secrets.APP_CLIENT_SECRET }}
           GITHUB_INSTALLATION_ID: '15140434'
       id: hello
-      uses: hengkyawijaya/release-drafter-action@v0.0.3
+      uses: hengkyawijaya/release-drafter-action@v0.0.4
       with:
         github-ref: '${{github.ref}}'
         service: 'learning-git'
