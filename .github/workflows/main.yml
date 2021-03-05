@@ -9,7 +9,7 @@ jobs:
       id: hello
       uses: hengkyawijaya/release-drafter-action@v0.0.2
       with:
-        github-ref: '$GITHUB_REF'
+        github-ref: '${{github.ref}}'
         service: 'learning-git'
         prefix: 'v'
         postfix: ''
