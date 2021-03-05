@@ -6,6 +6,9 @@ jobs:
     name: Just Create Release
     steps:
     - name: Hello world action step
+      env:
+          REPO: 'LearningGit'
+          OWNER: 'hengkyawijaya'
       id: hello
       uses: hengkyawijaya/release-drafter-action@v0.0.2
       with:
