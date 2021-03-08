@@ -14,7 +14,7 @@ jobs:
           OWNER: 'hengkyawijaya'
           GITHUB_TOKEN: ${{ secrets.USER_TOKEN }}
       id: hello
-      uses: hengkyawijaya/release-drafter-action@v0.0.3
+      uses: hengkyawijaya/release-drafter-action@v0.0.4
       with:
         github-ref: '${{github.ref}}'
         service: 'learning-git'
