@@ -1,7 +1,10 @@
 name: Create Release
 on:
+  push:
+    branches:
+      - master
   pull_request:
-    branches: [master]
+    types: [opened, reopened, synchronize]
 
 jobs:
   release_drafter_job:
