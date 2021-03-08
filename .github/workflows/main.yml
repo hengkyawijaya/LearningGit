@@ -1,14 +1,18 @@
-on: [pull_request]
+name: Create Release
+on:
+  push:
+    branches: [master]
 
 jobs:
   release_drafter_job:
     runs-on: ubuntu-latest
     name: Just Create Release
     steps:
-    - name: Hello world action step
+    - name: Release Drafter
       env:
           REPO: 'LearningGit'
           OWNER: 'hengkyawijaya'
+          GITHUB_TOKEN: ${{ secrets.USER_TOKEN }}
       id: hello
       uses: hengkyawijaya/release-drafter-action@v0.0.2
       with:
@@ -16,6 +20,3 @@ jobs:
         service: 'learning-git'
         prefix: 'v'
         postfix: ''
-    # Use the output from the `hello` step
-    - name: Release Drafter
-      run: echo "execute release drafter"
