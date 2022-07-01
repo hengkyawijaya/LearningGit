@@ -10,6 +10,6 @@ jobs:
     steps:
     - name: Say Word
       id: say_word
-      uses: hengkyawijaya/say-word-action@v0.0.1
+      uses: hengkyawijaya/say-word-action@v0.0.2
       with:
         word: 'hello'
